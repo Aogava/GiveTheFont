@@ -390,6 +390,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-function__h2 {
   font-size: 3rem;
+  line-height: 120%;
   /* max-width: 42.7vw; */
   margin-bottom: 11.94vh;
   color: var(--main-color);
@@ -560,6 +561,7 @@ h1, h2, h3, h4, h5, h6 {
 .third-part__header {
   font-family: Jost;
   font-size: 1.5rem;
+  line-height: 144.5%;
   color: var(--main-color);
   margin-bottom: 1.6vh;
 }
@@ -567,6 +569,7 @@ h1, h2, h3, h4, h5, h6 {
 .third-part__description {
   font-family: Jost;
   font-size: 1.25rem;
+  line-height: 160%;
   color: var(--main-color);
   margin-bottom: 1.6vh;
 }
@@ -604,11 +607,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .fourth-part__header {
   font-size: 1.5rem;
+  line-height: 130%;
   grid-column: span 2;
 }
 
 .fourth-part__description {
   font-size: 1.25rem;
+  line-height: 150%;
   grid-column: span 3;
 }
 
@@ -662,6 +667,7 @@ h1, h2, h3, h4, h5, h6 {
 .fifth-part__description {
   grid-column: 2/3;
   width: 26.8vw;
+  line-height: 150%;
   margin-bottom: 5.55vh;
   margin-left: 3vw;
 }
@@ -689,6 +695,7 @@ h1, h2, h3, h4, h5, h6 {
 .fifth-part__big-description {
   grid-column: 2/3;
   font-size: 3rem;
+  line-height: 130%;
   margin-left: 3vw;
 }
 
@@ -764,11 +771,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .creators__creator-name {
   font-size: 1.25rem;
+  line-height: 130%;
   margin-top: 3.33vh;
 }
 
 .creators__creator-specialization {
   font-size: 1.25rem;
+  line-height: 130%;
   margin-top: 0.55vh;
 }
 
@@ -826,6 +835,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: auto 1fr auto;
   align-content: start;
   align-items: start;
+  line-height: 120%;
 }
 
 .footer__site-name {
@@ -843,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
   align-content: center;
   justify-content: center;
   column-gap: 4.16vw;
-  font-size: 1rem;
+  font-size: 1rem;  
 }
 
 .footer__navigation-link {
