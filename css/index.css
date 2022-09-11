@@ -7,6 +7,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: Classic Console Neue;
+  src: local(""), url(../fonts/clacon.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: Atonic;
   src: local(""), url(../fonts/atonic.otf);
   font-weight: 400;
@@ -312,11 +318,13 @@ h1, h2, h3, h4, h5, h6 {
   top: 0.625rem;
   left: 0px;
 }
-@media (max-height: 800px) {
+
+@media (max-height: 984px) {
   .first-part {
     height: fit-content;
   }
 }
+
 @media (max-width: 565px) {
   .first-part {
     margin-bottom: 15vh;
@@ -382,24 +390,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-function {
   text-align: center;
-  /* position: relative;
-  top: 15vh;
-  left: 50vw;
-  transform: translate(-50%); */
   padding: 4vw;
   margin: 15vh auto;
 }
 
 .main-function__picking-font {
-  /* position: relative;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%); */
   font-size: 4rem;
   line-height: 120%;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 834px) {
   .main-function__picking-font {
     font-size: 3rem;
     line-height: 120%;
@@ -416,7 +416,6 @@ h1, h2, h3, h4, h5, h6 {
 .main-function__h2 {
   font-size: 3rem;
   line-height: 120%;
-  /* max-width: 42.7vw; */
   margin-bottom: 11.94vh;
   color: var(--main-color);
 }
@@ -444,6 +443,222 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-function__button:hover {
   transform: scale(1.05);
+}
+
+.main-function__picked-font {
+  margin: 10vh 5.55vw;
+}
+
+.picked-font {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 7.56vw 17.66vh;
+  justify-content: start;
+  justify-items: start;
+  /* align-content: start;
+  align-items: start; */
+}
+
+.picked-font__font {
+  width: 338px;
+}
+
+.picked-font__font-name-decorated {
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.picked-font__font-name-usual {
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+.picked-font__font-description {
+}
+
+.font-description {
+  font-size: 1.25rem;
+  line-height: 120%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2.22vh;
+}
+
+/* .font-description__property-names {
+  margin-right: 4.37vw;
+  text-transform: uppercase;  
+} */
+
+.font-description__big-gap {
+  height: 6.66vh;
+}
+
+.font-description__property-name {
+  margin-right: 4.37vw;
+  text-transform: uppercase;
+}
+
+/* .font-description__property-name:first-child {
+  margin-top: 0;
+ }
+
+.font-description__property-name:last-child {
+ margin-top: 8.88vh;
+} */
+
+/* .font-description__property-values {
+  margin-right: 0.5vw;
+} */
+
+.font-description__property-value {
+  width: 202px;
+}
+
+.font-description__link {
+  text-decoration: underline;
+  color: var(--main-color);
+  transition-duration: 0.3s;
+}
+
+.font-description__link:hover {
+  text-decoration: underline;
+  font-size: 120%;
+}
+
+/* .font-description__property-value:first-child {
+  margin-top: 0;
+}
+
+.font-description__property-value:last-child {
+  margin-top: 8.88vh;
+  text-decoration: underline;
+} */
+
+/* .font-description__property-warnings {
+} */
+
+.font-description__property-warning {
+  border: 1px solid black;
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
+  border-radius: 100%;
+  transition-duration: 0.3s;
+}
+
+.font-description__property-warning:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* .font-description__property-warning:first-child {
+  margin-top: 0;
+}
+
+.font-description__property-warning:last-child {
+  margin-top: 8.88vh;  
+} */
+
+.bigger-indent {
+  margin-top: 8.88vh; 
+}
+
+.picked-font__try-again {
+  align-self: end;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 10px 60px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  transition-duration: 0.3s;
+}
+
+.picked-font__try-again:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.picked-font__sample {
+  font-size: 2.57vw;
+  color: #C8C8C8;
+  width: 26.87vw;
+  transition-duration: 0.3s;
+}
+
+.picked-font__sample:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 1115px) {
+  .picked-font {
+    grid-template-columns: auto auto auto;
+  }
+
+  .picked-font__font {
+    grid-column: span 2;
+  }
+
+  .picked-font__font-name-decorated {
+    width: 270px;
+  }
+
+  .font-description {
+    grid-column: span 2;
+  }
+
+  .picked-font__try-again {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 834px) {
+  .picked-font__try-again {
+    margin-top: 8.37vh;
+  }
+
+  .picked-font__sample {
+    align-self: end;
+  }
+}
+
+@media (max-width: 700px) {
+  .picked-font__sample {
+    display: none;
+  }
+}
+
+@media (max-width: 565px) {
+  .picked-font {
+    display: block;  
+  }
+
+  .picked-font__font {
+    display: grid; 
+    row-gap: 3vh;
+    justify-items: center;   
+    text-align: center; 
+    width: auto;
+    margin-bottom: 7vh;
+  }
+
+  .picked-font__font-name-decorated {
+    grid-row: 2/3;
+    width: auto;
+  }
+  
+  .picked-font__font-name-usual {
+    grid-row: 1/2;
+  }
+
+  .font-description {
+    margin: 0 auto;
+  }
+
+  .picked-font__try-again {
+    display: block;
+    margin: 14vh auto;
+  }
 }
 
 .second-part {
